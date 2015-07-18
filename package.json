@@ -1,0 +1,19 @@
+{
+  "name": "curve",
+  "appName": "Curve",
+  "version": "0.0.1",
+  "main": "main.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/benogle/curve-app.git"
+  },
+  "compileCacheDir": "./compile-cache",
+  "compileDirs": [
+    "src", "styles", "static"
+  ],
+  "devDependencies": {
+    "electron-compile": "*",
+    "electron-prebuilt": "^0.29.2"
+  },
+  "dependencies": {}
+}
