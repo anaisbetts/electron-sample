@@ -1,6 +1,5 @@
-# Curve.app
+# Sample.app
 
 ```
-script/bootstrap
-script/run
+
 ```

@@ -1,11 +1,11 @@
 {
-  "name": "curve",
-  "appName": "Curve",
+  "name": "sample",
+  "appName": "Sample",
   "version": "0.0.1",
   "main": "main.js",
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/benogle/curve-app.git"
+    "url" : "https://github.com/benogle/electron-sample.git"
   },
   "compileCacheDir": "./compile-cache",
   "compileDirs": [
