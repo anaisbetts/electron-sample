@@ -23,7 +23,7 @@ class Application
     @openWindow()
 
   openWindow: ->
-    win = new ApplicationWindow("file://#{__dirname}/../renderer/index.html", {width: 1200, height: 800})
+    win = new ApplicationWindow("file://#{__dirname}/../main-window/index.html", {width: 1200, height: 800})
     @addWindow(win)
 
   # Public: Removes the window from the global window list.
