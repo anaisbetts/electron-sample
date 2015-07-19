@@ -1,3 +1,3 @@
 window.onload = function() {
-  require('../src/renderer/main')
+  require('./main')
 }
