@@ -1,4 +1,6 @@
 var path = require('path')
+var fs = require('fs')
+var cacheDir = path.join(__dirname, 'compile-cache')
 
 var getEnvironment = function() {
   var environment = 'production'
@@ -11,8 +13,8 @@ var getEnvironment = function() {
   return environment
 }
 
-if (getEnvironment() == 'production') {
-  require('electron-compile').initForProduction(path.join(__dirname, 'compile-cache'))
+if (getEnvironment() == 'production' && fs.statSyncNoException(cacheDir)) {
+  require('electron-compile').initForProduction(cacheDir)
 }
 else {
   console.log('In development mode')
